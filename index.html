@@ -1,0 +1,19 @@
+<html>
+
+<head>
+<script src="jquery.js"></script>
+<script src="z_score_area.js"></script>
+</head>
+
+<body>
+  <div id="normal_curve">
+    <canvas id="canvas" width="600" height="400" style="border:1px solid;padding:0;margin:0" oninput="z_score_slider()" ></canvas>
+    <p style="margin:0;padding:0"><input type="range" id="zscore" value="0" style="padding:0;margin:0"></input></p>
+  </div>
+<p>Z score <input type="text" name="z" id="z" value="0"></input> <input type="button" id="go" value="Go">
+<p><label>Area to left of z</label> <span id="area_left_of_z"></span></p>
+<p><label>Area to right of z</label> <span id="area_right_of_z"></span></p>
+<p><label>Area between 0 and z</label> <span id="area_between_0_and_z"></span></p>
+<p><label>Area from -z to +z</label> <span id="area_between_minus_z_and_z"></span></p>
+</body>
+</html>
